@@ -15,22 +15,19 @@ Before you can get aar you should checkout [mopub-android-sdk](https://github.co
 
 When build is finished aar file will be located in `build/libs`.
 
-Maven artifact
-=======================
+build.gradle example
+======================
+
+* local repo
 
 ```bash
   $ mvn install:install-file \
-  -Dfile=build/libs/vf-mopub-sdk-android-aar.aar \
+  -Dfile=build/libs/mopub-sdk-android-aar.aar \
   -DgroupId=com.mopub.mobileads \
   -DartifactId=mopub-android \
   -Dversion="1.0" \
   -Dpackaging=aar
 ```
-
-build.gradle example
-======================
-
-* local repo
 
 ```groovy
 ...
@@ -47,6 +44,8 @@ dependencies {
 ```
 
 * remote repo
+
+Maven Repository on [GitHub Pages](http://pages.github.com/)
 
 ```groovy
 ...
