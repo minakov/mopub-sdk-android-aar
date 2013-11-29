@@ -66,7 +66,7 @@ dependencies {
 }
 ```
 
-> In your `build.gradle` include `maven( url "http://minakov.github.io/mopub-sdk-android-aar" )` as repository priorior to `mavenCentral()`
+> In your `build.gradle` include `maven{ url "http://minakov.github.io/mopub-sdk-android-aar" }` as repository priorior to `mavenCentral()`
 
 
 License
