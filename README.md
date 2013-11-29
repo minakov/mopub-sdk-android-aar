@@ -56,7 +56,7 @@ Maven repository on [GitHub Pages](http://pages.github.com/)
 ...
 
 repositories {
-    maven( url "http://minakov.github.io/mopub-sdk-android-aar" )
+    maven { url "http://minakov.github.io/mopub-sdk-android-aar" }
     ...
 }
 
