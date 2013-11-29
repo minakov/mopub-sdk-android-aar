@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
+
+    sourceSets {
+        main {
+            manifest.srcFile 'mopub-android-sdk/mopub-sdk/AndroidManifest.xml'
+            java.srcDirs = ['mopub-android-sdk/mopub-sdk/src/main/java']
+            res.srcDirs = ['mopub-android-sdk/mopub-sdk/res']
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+}
