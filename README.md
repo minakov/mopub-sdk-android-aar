@@ -1,11 +1,16 @@
 MoPub Android SDK Android ARchive
-========================
+========
 
 MoPub Android SDK library built with gradle in aar format for usage with android gradle build system.
 
 How to use
-=======================
+========
+
+Local repository
+--------
+
 Before you can get aar you should checkout [mopub-android-sdk](https://github.com/mopub/mopub-android-sdk.git) submodule. Overall build process including build is straightforward:
+
 ```bash
   $ git submodule update --init
   ...
@@ -15,10 +20,7 @@ Before you can get aar you should checkout [mopub-android-sdk](https://github.co
 
 When build is finished aar file will be located in `build/libs`.
 
-build.gradle example
-======================
-
-* local repo
+Maven artifact
 
 ```bash
   $ mvn install:install-file \
@@ -28,6 +30,8 @@ build.gradle example
   -Dversion="1.0" \
   -Dpackaging=aar
 ```
+
+`build.gradle` example
 
 ```groovy
 ...
@@ -43,9 +47,10 @@ dependencies {
 }
 ```
 
-* remote repo
+Remote repository
+--------
 
-Maven Repository on [GitHub Pages](http://pages.github.com/)
+Maven repository on [GitHub Pages](http://pages.github.com/)
 
 ```groovy
 ...
@@ -65,7 +70,7 @@ dependencies {
 
 
 License
---------
+========
 
     Copyright 2013 Vladimir Minakov
 
