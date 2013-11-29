@@ -17,6 +17,7 @@ When build is finished aar file will be located in `build/libs`.
 
 Maven artifact
 =======================
+
 ```bash
   $ mvn install:install-file \
   -Dfile=build/libs/vf-mopub-sdk-android-aar.aar \
@@ -24,17 +25,19 @@ Maven artifact
   -DartifactId=mopub-android \
   -Dversion="1.0" \
   -Dpackaging=aar
-  ...
 ```
 
-`build.gradle` example
+build.gradle example
 ======================
+
+* local repo
+
 ```groovy
 ...
 
 repositories {
-    ...
     mavenLocal()
+    ...
 }
 
 dependencies {
@@ -42,3 +45,21 @@ dependencies {
     ...
 }
 ```
+
+* remote repo
+
+```groovy
+...
+
+repositories {
+    maven( url "http://minakov.github.io/mopub-sdk-android-aar" )
+    ...
+}
+
+dependencies {
+    compile 'com.mopub.mobileads:mopub-android:+@aar'
+    ...
+}
+```
+
+> In your `build.gradle` include `maven( url "http://minakov.github.io/mopub-sdk-android-aar" )` as repository priorior to `mavenCentral()`
