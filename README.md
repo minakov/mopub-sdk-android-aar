@@ -72,7 +72,7 @@ dependencies {
 Credits
 ========
 
-* http://mente.github.io/facebook-api-android-aar
+* https://github.com/mente/facebook-api-android-aar
 * https://github.com/square/spoon
 * http://blog.kaltepoth.de/posts/2010/09/06/github-maven-repositories.html
 
